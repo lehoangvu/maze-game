@@ -37,7 +37,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// __webpack_hash__
-/******/ 	__webpack_require__.h = "ea581c847368669f86e2";
+/******/ 	__webpack_require__.h = "97d6b85c4c74911a7025";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -360,8 +360,8 @@
 	                var min = 1;
 	                var mazeBlockWidth = this.state.gameCanvas.width / this.state.levelData.mazeWidth;
 	                var mazeBlockHeight = this.state.gameCanvas.height / this.state.levelData.mazeHeight;
-	                var xBlock = this.rand(this.state.levelData.mazeWidth, min);
-	                var yBlock = this.rand(this.state.levelData.mazeHeight, min);
+	                var xBlock = this.rand(this.state.gameCanvas.width, min);
+	                var yBlock = this.rand(this.state.gameCanvas.height, min);
 	                // check player have in a block
 	                var player = this.player;
 	                if ((xBlock * mazeBlockWidth > player.body.position.x || player.body.position.x < (xBlock + 1) * mazeBlockWidth) && (yBlock * mazeBlockHeight > player.body.position.y || player.body.position.y < (yBlock + 1) * mazeBlockHeight)) {
