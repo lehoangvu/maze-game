@@ -239,8 +239,8 @@ class Main {
             const min = 1;
             const mazeBlockWidth = this.state.gameCanvas.width / this.state.levelData.mazeWidth;
             const mazeBlockHeight = this.state.gameCanvas.height / this.state.levelData.mazeHeight;
-            const xBlock = this.rand(this.state.gameCanvas.width, min);
-            const yBlock = this.rand(this.state.gameCanvas.height, min);
+            const xBlock = this.rand(this.state.levelData.mazeWidth, min);
+            const yBlock = this.rand(this.state.levelData.mazeHeight, min);
             // check player have in a block
             const player = this.player;
             if((xBlock * mazeBlockWidth  > player.body.position.x 
