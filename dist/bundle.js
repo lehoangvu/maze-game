@@ -37,7 +37,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// __webpack_hash__
-/******/ 	__webpack_require__.h = "ea581c847368669f86e2";
+/******/ 	__webpack_require__.h = "9f44e14725671b00dc79";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -441,8 +441,8 @@
 	                    var xDeg = device.getXDeg();
 	                    var yDeg = device.getYDeg();
 	                    if (xDeg && yDeg) {
-	                        _this.world.gravity.x = _this.wordGravity - _this.wordGravity * (Math.abs(90 + yDeg) / 90);
-	                        _this.world.gravity.y = _this.wordGravity - _this.wordGravity * (Math.abs(90 - xDeg) / 90);
+	                        _this.world.gravity.x = _this.wordGravity - 2 * (Math.abs(90 + yDeg) / 90);
+	                        _this.world.gravity.y = _this.wordGravity - 2 * (Math.abs(90 - xDeg) / 90);
 	                    }
 	
 	                    _this.player.onUpdate(_this.world);

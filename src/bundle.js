@@ -321,8 +321,8 @@ class Main {
                 let xDeg = device.getXDeg();
                 let yDeg = device.getYDeg();
                 if(xDeg && yDeg){
-                    _this.world.gravity.x = _this.wordGravity - _this.wordGravity * (Math.abs(90 + yDeg) / 90);
-                    _this.world.gravity.y = _this.wordGravity - _this.wordGravity * (Math.abs(90 - xDeg) / 90);
+                    _this.world.gravity.x = _this.wordGravity - 2 * (Math.abs(90 + yDeg) / 90);
+                    _this.world.gravity.y = _this.wordGravity - 2 * (Math.abs(90 - xDeg) / 90);
                     
                 }
 
