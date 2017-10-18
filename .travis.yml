@@ -18,5 +18,5 @@ script:
  - npm run build
 
 after_success:
-  - firebase deploy --token $FIREBASE_TOKEN --project box
+  - firebase deploy --token $FIREBASE_TOKEN --project tiki-mobile-web-box
   
