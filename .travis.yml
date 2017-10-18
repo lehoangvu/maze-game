@@ -15,6 +15,7 @@ before_script:
 
 script:
 #  - polymer build
+ - npm run build
 
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN
