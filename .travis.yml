@@ -14,7 +14,7 @@ before_script:
 #  - npm install -g polymer-cli
 
 script:
-  - polymer build
+#  - polymer build
 
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN
