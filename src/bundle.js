@@ -46,7 +46,7 @@ class Main {
                 mazeWidth: 8,
                 mazeHeight: 13,
                 mazeWallWidth: 4, 
-                wordGravity: 2,
+                wordGravity: 0,
                 ...this.level.levelData,
             },
             gameCanvas: {
