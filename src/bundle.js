@@ -366,7 +366,7 @@ class Main {
 
         this.world = this.engine.world;
         this.world.gravity.x = 0;
-        this.world.gravity.y = 0.05;
+        this.world.gravity.y = 0;
         
         // run the engine
         Engine.run(this.engine);
