@@ -5,7 +5,7 @@
   "main": "server/index.js",
   "scripts": {
     "dev": "webpack -d --color --watch --progress --config webpack.babel.js",
-    "build": "webpack -d --color --minimize  --progress --config webpack.babel.js"
+    "_build": "webpack -d --color --minimize  --progress --config webpack.babel.js"
   },
   "repository": {
     "type": "git",
